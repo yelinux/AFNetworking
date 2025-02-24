@@ -279,6 +279,13 @@ manager.securityPolicy.allowInvalidCertificates = YES; // not recommended for pr
 
 AFNetworking includes a suite of unit tests within the Tests subdirectory. These tests can be run simply be executed the test action on the platform framework you would like to test.
 
+## PrivacyInfo
+
+步骤一：新增PrivacyInfo.xcprivacy，勾选target
+步骤二：填写PrivacyInfo.xcprivacy
+步骤三：AFNetworking.podspec文件中新增：
+s.resource_bundles = {'AFNetworking' => ['PrivacyInfo.xcprivacy']}
+
 ## Credits
 
 AFNetworking is owned and maintained by the [Alamofire Software Foundation](http://alamofire.org).
